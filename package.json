@@ -1,0 +1,15 @@
+{
+    "name": "hot_coco_test_repo",
+    "version": "1.0.0",
+    "scripts": {
+        "start": "npm run-script build && node dist/index.js",
+        "build": "tsc"
+    },
+    "dependencies": {
+        "typescript": "^4.4.4"
+    },
+    "devDependencies": {
+        "@types/node": "^16.11.6",
+        "@types/typescript": "^2.0.0"
+    }
+}
