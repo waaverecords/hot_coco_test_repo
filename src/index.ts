@@ -7,4 +7,4 @@ app.get('*', (request, response) => {
     response.send({ message: 'Hello World!'});
 });
 
-app.listen(port);
+app.listen(port, () => console.log(`Listening on port ${port}`));
