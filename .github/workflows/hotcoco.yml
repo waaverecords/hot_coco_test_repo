@@ -1,0 +1,20 @@
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+  workflow_dispatch:
+
+jobs:
+  hotcoco:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Invoking hotcoco
+        uses: distributhor/workflow-webhook
+        env:
+          webhook_url: 'http://2398-104-245-156-31.ngrok.io/deploy'
+          webhook_secret: 'mysecret'
