@@ -16,5 +16,5 @@ jobs:
       - name: Invoking hotcoco
         uses: distributhor/workflow-webhook@v2
         env:
-          webhook_url: 'http://2398-104-245-156-31.ngrok.io/deploy'
+          webhook_url: 'http://bb90-104-245-156-31.ngrok.io/deploy'
           webhook_secret: 'mysecret'
